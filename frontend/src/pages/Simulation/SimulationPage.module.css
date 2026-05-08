@@ -1,0 +1,92 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: min(720px, 100%);
+  background: #ffffff;
+  border: 1px solid #dbe3ef;
+  border-radius: 18px;
+  padding: 2rem;
+  box-shadow: 0 18px 35px rgba(15, 23, 42, 0.08);
+}
+
+.title {
+  margin: 0;
+  color: #0f172a;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+}
+
+.subtitle {
+  margin: 0.55rem 0 1.4rem;
+  color: #475569;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form > :last-child {
+  grid-column: 1 / -1;
+  margin-top: 0.4rem;
+}
+
+.errorMessage {
+  margin: 1rem 0 0;
+  color: #b91c1c;
+  font-weight: 500;
+}
+
+.resultsSection {
+  margin-top: 1.7rem;
+  border-top: 1px solid #dbe3ef;
+  padding-top: 1.4rem;
+}
+
+.resultsTitle {
+  margin: 0 0 1rem;
+  color: #0f172a;
+  font-size: 1.3rem;
+}
+
+.resultsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.resultCard {
+  border: 1px solid #dbe3ef;
+  border-radius: 12px;
+  padding: 1rem;
+  background: #f8fafc;
+}
+
+.resultCardTitle {
+  margin: 0 0 0.7rem;
+  font-size: 1.05rem;
+  color: #1e293b;
+}
+
+.resultCard p {
+  margin: 0.45rem 0;
+  color: #334155;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 1.35rem 1rem;
+    border-radius: 14px;
+  }
+
+  .form {
+    grid-template-columns: 1fr;
+  }
+
+  .resultsGrid {
+    grid-template-columns: 1fr;
+  }
+}
